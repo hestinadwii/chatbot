@@ -1,0 +1,7 @@
+flask
+openai
+llama-index
+numpy
+pandas
+gunicorn
+flask_cors

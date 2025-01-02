@@ -1,0 +1,10 @@
+runtime: python311
+
+env_variables:
+  OPENAI_API_KEY: "put your API key here"
+
+entrypoint: gunicorn -b :$PORT --timeout 120 main:app
+
+handlers:
+  - url: /.*
+    script: auto
